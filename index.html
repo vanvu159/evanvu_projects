@@ -1,12 +1,120 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Van Vu</title>
-  </head>
-  <body>
-    <h1>Van Vu</h1>
-    <p>Welcome to my website!</p>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="Ice cream">
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website Design Systems</title>
+        <link href="styles.css" rel="stylesheet">
+        <!--Link Font Google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header-container">
+            <h1>Website Design Systems</h1>
+            <!--<img src="IMG/logo_v.png" alt="My Logo" class="logo">-->
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#color">Color</a></li>
+                    <li><a href="#typo">Typography</a></li>
+                </ul>
+            </nav>
+            <hr class="header-divider">
+        </header>
+        <section id="color"> 
+            <h1>Colors</h1>
+            <p>Browse our library of more than 100 color names</p>
+            <ul>
+                <li><a href ="#red">Red</a></li> 
+                <li><a href ="#green">Green</a></li>
+                <li><a href ="#blue">Blue</a></li>
+            </ul>
+            <div class="color-red">
+                <div class="color-card-name" style="background: rgb(171, 39, 79)"><span>AB274F</span></div>
+                <div class="color-card-info"><a href="ab274f.html">Amaranth purple</a></div>
+            
+                <div class="color-card-name" style="background: rgb(124, 9, 2)"><span>7C0902</span></div>
+                <div class="color-card-info"><a href="7C0902.html">Barn red</a></div>
+                       
+                <div class="color-card-name" style="background: rgb(254, 111, 94)"><span>FE6F5E</span></div>
+                <div class="color-card-info"><a href="FE6F5E.html">Bitter Sweet</a></div>
+            </div>
+            <div class="color-green">
+                <div class="color-card-name" style="background: rgb(3, 192, 60)"><span>03C03C</span></div>
+                <div class="color-card-info"><a href="03C03C.html">Dark pastel Green</a></div>
+            
+                <div class="color-card-name" style="background: #177245"><span>177245</span></div>
+                <div class="color-card-info"><a href="177245.html">Dark Spring Green</a></div>
+                       
+                <div class="color-card-name" style="background: #00693E"><span>00693E</span></div>
+                <div class="color-card-info"><a href="00693E.html">Darkmouth Green</a></div>
+            </div>
+            <div class="color-blue">
+                <div class="color-card-name" style="background: #6CB4EE"><span>6CB4EE</span></div>
+                <div class="color-card-info"><a href="6CB4EE.html">Argentinian Blue</a></div>
+            
+                <div class="color-card-name" style="background: #007FFF"><span>007FFF</span></div>
+                <div class="color-card-info"><a href="007FFF.html">Azure</a></div>
+                       
+                <div class="color-card-name" style="background: #0770BB"><span>0770BB</span></div>
+                <div class="color-card-info"><a href="0770BB.html">Azul</a></div>
+            </div>
+        </section>
+        <section id="typo">
+            <h1>Typography</h1>
+            <h2>Serif</h2>
+                <div class="roboto">
+                <h3 class="title_font">Roboto Serif</h3>
+                <div class ="r_content">
+                <p>Whereas recognition of the inherent dignity</p>
+                <p style="font-style: italic;">Whereas recognition of the inherent dignity</p>
+                <p style="font-weight:bold;">Whereas recognition of the inherent dignity</p>
+                </div>
+            </div>
+            <div class="raleway">
+                <h3 class="title_font">Raleway</h3>
+                <div class ="r_content">
+                <p>Whereas recognition of the inherent dignity</p>
+                <p style="font-style: italic;">Whereas recognition of the inherent dignity</p>
+                <p style="font-weight:bold;">Whereas recognition of the inherent dignity</p>
+                </div>
+            </div>
+
+            <h2 class="san_serif">San Serif</h2>
+            <div class="notoserif">
+                <h3 class="title_font">Noto Serif</h3>
+                <div class ="r_content">
+                <p>Whereas recognition of the inherent dignity</p>
+                <p style="font-style: italic;">Whereas recognition of the inherent dignity</p>
+                <p style="font-weight:bold;">Whereas recognition of the inherent dignity</p>
+                </div>
+            </div>
+            <div class="tinos">
+                <h3 class="title_font">Tinos</h3>
+                <div class ="r_content">
+                <p>Whereas recognition of the inherent dignity</p>
+                <p style="font-style: italic;">Whereas recognition of the inherent dignity</p>
+                <p style="font-weight:bold;">Whereas recognition of the inherent dignity</p>
+                </div>
+            </div>
+            <div class="fraunces">
+                <h3 class="title_font">Fraunces</h3>
+                <div class ="r_content">
+                <p>Whereas recognition of the inherent dignity</p>
+                <p style="font-style: italic;">Whereas recognition of the inherent dignity</p>
+                <p style="font-weight:bold;">Whereas recognition of the inherent dignity</p>
+                </div>
+            </div>
+
+
+        </section>
+        
+    </body>
+    <foot>
+            <hr class="footer-divider">
+            <p>© 2025 This is my personal project from </p>
+                <a href="http://wwww.codecademy.com"><img src="IMG/codecademylogo.svg" alt="CodeCademy" class="logo_footer_code"></a> 
+        
+    </foot>
 </html>
