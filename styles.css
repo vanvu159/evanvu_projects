@@ -30,6 +30,57 @@ body {
     font-size: 30px;
 }
 
+/*Dropdown*/
+/* Căn chỉnh dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Nút chính */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Nội dung dropdown (ẩn mặc định) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Các mục trong dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover để hiện menu */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hover hiệu ứng item 
+.dropdown-content a:hover {
+  background-color: #f49d9d;
+}*/
+
+/* Hover nút menu */
+.dropdown:hover .dropbtn {
+  background-color: #03c03c;
+}
+
 
 .header-divider {
     border: none;
@@ -196,6 +247,7 @@ nav ul li a:hover {
     line-height: 1.2rem;
     padding-left: 30px;
 }
+
 
 .raleway p {
     font-family: Raleway, Arial, Helvetica, sans-serif;
