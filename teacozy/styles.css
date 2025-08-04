@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+ }
+
+#local,
+#featured,
+#mission {
+    scroll-margin-top: 80px; /* có fixed header nên phải chừa margin top */
+}
+
+/*Dropdown*/
+/* Căn chỉnh dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Nút chính */
+.dropbtn {
+  background-color: #000000;
+  color: seashell;
+  /*padding: 8px 16px;*/
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+/* Nội dung dropdown (ẩn mặc định) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fbfbfb;
+  min-width: 180px;
+  
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 20;
+  top: 100%;
+  left:0;
+  font-size: 15px;
+  z-index: 20;
+}
+
+/* Các mục trong dropdown */
+.dropdown-content a {
+  color: black;
+  padding-top:10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover để hiện menu */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header-container {
+    max-height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    padding: 10px 60px;
+    z-index: 100; /*de header luon hien thi tren cac phan tu khac*/
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0 30px;
+    margin: 0;
+}
+
+nav ul li a {
+    margin-right: 20px;
+    text-decoration: underline;
+    color: seashell;
+    padding-top: 20px;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 10px;
+}
+/*Main Top*/
+/*.main_wrapper {
+    margin-top: 69px; /* Bù header fixed 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* cho hình vào giữa 
+    max-width: 1200px;
+}
+.main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px; /*Dieu chinh chieu cao theo yeu cau
+    width: 100%;
+    margin-top:0 auto;
+    
+}*/
+
+.main_container {
+    margin: 69px auto 0; /* Margin top để tránh header và canh giữa cho hình*/
+    max-width: 1200px;
+    height: 700px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading_container {
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    width: 100%;
+}
+
+.heading_container h4 {
+    font-size: 20px; 
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.heading_container h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.tea_month {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.tea_month h4 {
+    margin-top: 0px;
+}
+
+.tea_month h2 {
+    margin-bottom: 10px;
+}
+
+.tea-container {
+    display: flex;
+    flex-wrap: wrap; /*nên đặt ở lớp cha*/
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto; /* Căn giữa container */
+    margin-bottom: 50px;
+}
+
+.tea {
+    flex: 0 0 auto;
+    width: 300px; /* kich thuoc mong muon cho moi items*/
+    text-align: center;
+    padding: 10px;
+}
+
+.tea img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+ 
+.tea p {
+    margin-top: 0px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 1200px;
+    height: 550px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-position: center 22%;
+    background-size: 110%;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+
+.location h2 {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+.col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.col-1, .col-2, .col-3 {
+    font-size: 22px;
+    margin: 0px 20px;
+    width: 300px;
+    text-align: center;
+    background-color: black;
+    line-height: 1.5;
+    padding: 0 10px;
+    opacity: 1;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    text-align: center;
+    line-height: 1.2em;
+    opacity: 0.9;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    font-size: 15px;
+}
